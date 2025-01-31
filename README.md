@@ -1,9 +1,18 @@
-# LEditHammingCode 
+# Hamming
+
+Hamming codes are error-correcting codes used to detect and correct single-bit errors in a sequence of bits. Hamming codes are often used in error-correcting RAM, and Hamming codes demonstrate the capabilities of simple error correction algorithms.
+
 **VLSI Implementation of Hamming Encoder and Decoder Circuit using LEDIT**
 
 # Project Description 
 
-This project details the VLSI implementation of a Hamming (7,4), error-correcting code encoder and decoder. Within digital systems, error-correcting codes are used to reduce the probability of errors in data to create reliable transmission within noisy mediums. There are two types of error-correcting codes: Block Codes and Convolutional Codes. The Hamming (7,4) code is a simple block code that adds 3 bits of redundancy to 4-bit blocks to create 7-bit blocks.  
+This project details the VLSI implementation of a Hamming (7,4), error-correcting code encoder and decoder. Within digital systems, error-correcting codes are used to reduce the probability of errors in data to create reliable transmission within noisy mediums. 
+
+There are two types of error-correcting codes:
+* Block Codes
+* Convolutional Codes.
+  
+The Hamming (7,4) code is a simple block code that adds 3 bits of redundancy to 4-bit blocks to create 7-bit blocks.  
 
 Error correction is essential in many digital systems to ensure data integrity. Take, for instance, the case of transmitting a character. If the character is encoded as an ASCII value, 'A' corresponds to 0x41, and in binary 01000010. If a single bit error occurs during the transmission, and the received character is now 01010010, the receiver would interpret this character now as an ‘R.’ This becomes a significant problem when applied at large scales and in noisy systems, where a valid string of characters could become entirely indecipherable. The importance of each bit is even more significant when dealing with compressed files or data, where even a single bit can be important enough to render the information invalid.
 
@@ -36,6 +45,9 @@ After decoding, any single-bit error can be corrected based on the intersection 
 * D4 = E1E2E3 XOR D4
 
 # Full Logic Level Block Diagram
+
+The first step in designing this decoder is to outline the logic at the gate-level.
+
 ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/be246517-1567-4a00-bdb2-5975e1269e1d)
 
 # Full Logic Level Simulation 
