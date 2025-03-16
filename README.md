@@ -14,7 +14,17 @@ There are two types of error-correcting codes:
   
 The Hamming (7,4) code is a simple block code that adds 3 bits of redundancy to 4-bit blocks to create 7-bit blocks.  
 
-Error correction is essential in many digital systems to ensure data integrity. Take, for instance, the case of transmitting a character. If the character is encoded as an ASCII value, 'A' corresponds to 0x41, and in binary 01000010. If a single bit error occurs during the transmission, and the received character is now 01010010, the receiver would interpret this character now as an ‘R.’ This becomes a significant problem when applied at large scales and in noisy systems, where a valid string of characters could become entirely indecipherable. The importance of each bit is even more significant when dealing with compressed files or data, where even a single bit can be important enough to render the information invalid.
+Error correction is essential in many digital systems to ensure data integrity. 
+
+For example, imagine you are transmitting text characters like A, B, C... 
+
+If the character is encoded as an ASCII value, 'A' corresponds to 0x41, and in binary 01000010. 
+
+The problem is that if a single bit error occurs during the transmission, and the received character is now 01010010, the receiver would interpret this character now as an ‘R.’ 
+
+This becomes a significant problem when applied at large scales and in noisy systems, where a valid string of characters could become entirely indecipherable.
+
+The importance of each bit is even more significant when dealing with compressed files or data, where even a single bit can be important enough to render the information invalid.
 
 <h3> Figure 1: Transmit of Character ‘A’ and Receive of Character ‘R’ Due to Error </h3>
 
