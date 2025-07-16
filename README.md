@@ -12,6 +12,9 @@ Hamming codes are error-correcting codes used to detect and correct single-bit e
 
 This project details the VLSI implementation of a Hamming (7,4), error-correcting code encoder and decoder. Within digital systems, error-correcting codes are used to reduce the probability of errors in data to create reliable transmission within noisy mediums. 
 
+### Hamming Codes 
+---
+
 There are two types of error-correcting codes:
 * Block Codes
 * Convolutional Codes.
