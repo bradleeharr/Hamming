@@ -3,8 +3,8 @@
 Hamming codes are error-correcting codes used to detect and correct single-bit errors in a sequence of bits. Hamming codes are often used in error-correcting RAM, and Hamming codes demonstrate the capabilities of simple error correction algorithms.
 
 
-### Examples
-* One example is [RAID-2](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_2) - A method of storing hard drives with redundant data to reduce errors, using Hamming codes.
+### Background
+* [RAID-2](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_2) - A method of storing hard drives with redundant data to reduce errors, using Hamming codes.
 * A [great explanation of Hamming Codes](https://www.youtube.com/watch?v=X8jsijhllIA) from the YouTube channel 3Blue1Brown
 
 
